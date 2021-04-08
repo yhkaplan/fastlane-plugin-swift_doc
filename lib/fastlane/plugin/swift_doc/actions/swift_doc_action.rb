@@ -1,5 +1,4 @@
 require 'fastlane/action'
-require_relative '../helper/swift_doc_helper'
 
 module Fastlane
   module Actions
