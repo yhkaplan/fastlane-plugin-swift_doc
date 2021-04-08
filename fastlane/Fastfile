@@ -1,3 +1,5 @@
 lane :test do
-  swift_doc
+  swift_doc # Runs generate
+  swift_doc(mode: :coverage) # gets documentation coverage
+  swift_doc(mode: :diagram) # creates diagram
 end
