@@ -1,5 +1,20 @@
 lane :test do
   swift_doc # Runs generate
+
   swift_doc(mode: :coverage) # gets documentation coverage
+
   swift_doc(mode: :diagram) # creates diagram
+
+  swift_doc(
+    input_paths: 'Component',
+    module_name: 'Component',
+    output_path: 'Component/Docs'
+  )
+
+  swift_doc(
+    input_paths: 'Extensions',
+    module_name: 'Extensions',
+    output_path: 'Extensions/Docs',
+    output_format: :html
+  )
 end
