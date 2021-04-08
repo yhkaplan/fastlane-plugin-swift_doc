@@ -27,7 +27,7 @@ describe Fastlane do
             )
           end").runner.execute(:test)
 
-          expect(result).to eq("swift-doc generate --inputs \\~/path/one, \\~/path/two\\ with\\ space")
+          expect(result).to eq("swift-doc generate \\~/path/one, \\~/path/two\\ with\\ space")
         end
 
         it "adds output path" do
@@ -101,7 +101,7 @@ describe Fastlane do
             )
           end").runner.execute(:test)
 
-          expect(result).to eq("swift-doc coverage --inputs \\~/path/one, \\~/path/two\\ with\\ space")
+          expect(result).to eq("swift-doc coverage \\~/path/one, \\~/path/two\\ with\\ space")
         end
 
         it "adds output path" do
@@ -146,7 +146,7 @@ describe Fastlane do
             )
           end").runner.execute(:test)
 
-          expect(result).to eq("swift-doc diagram --inputs \\~/path/one, \\~/path/two\\ with\\ space")
+          expect(result).to eq("swift-doc diagram \\~/path/one, \\~/path/two\\ with\\ space")
         end
       end
     end
