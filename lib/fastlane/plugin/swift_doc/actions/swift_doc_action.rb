@@ -66,7 +66,7 @@ module Fastlane
                                        env_name: "FL_SWIFT_DOC_BASE_URL",
                                        description: "The base url to work off of",
                                        type: String,
-                                       optional: true),
+                                       optional: true)
         ]
       end
 
@@ -106,7 +106,7 @@ module Fastlane
         [
           'swift_doc',
           'swift_doc(mode: :coverage)',
-          'swift_doc(module_name: "FooModule")',
+          'swift_doc(module_name: "FooModule")'
         ]
       end
 

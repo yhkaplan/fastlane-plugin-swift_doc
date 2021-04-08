@@ -31,6 +31,8 @@ Style/TernaryParentheses:
   Enabled: false
 Style/EmptyMethod:
   Enabled: false
+Lint/EmptyWhen:
+  AllowComments: true
 Style/BracesAroundHashParameters:
   Enabled: false
 Lint/UselessAssignment:
