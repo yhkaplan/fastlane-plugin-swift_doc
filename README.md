@@ -12,7 +12,7 @@ fastlane add_plugin swift_doc
 
 ## About swift_doc
 
-Generate documentation, documentation coverage, or a class diagram using SwiftDoc
+Generate documentation, documentation coverage, or a class diagram using [SwiftDoc](https://github.com/SwiftDocOrg/swift-doc)
 
 ## Example
 
