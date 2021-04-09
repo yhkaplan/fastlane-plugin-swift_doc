@@ -72,7 +72,7 @@ module Fastlane
 
       def self.optional_flags(params, mode)
         command = ""
-        command << " #{params[:input_paths].map(&:shellescape).join(', ')}" if params[:input_paths]
+        command << " #{params[:input_paths].map(&:shellescape).join(' ')}" if params[:input_paths]
         command << " --minimum-access-level #{params[:minimum_access_level]}" if params[:minimum_access_level]
 
         case mode
